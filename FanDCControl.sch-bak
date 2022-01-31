@@ -1,0 +1,736 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SATA:LM2596S_DC_MODEL_4 U1
+U 1 1 6125AB56
+P 4600 3200
+F 0 "U1" H 4975 3375 50  0000 C CNN
+F 1 "LM2596S_DC_MODEL_4" H 4975 3284 50  0000 C CNN
+F 2 "SATA:LM2596S_DC_MODEL_4" H 4600 3200 50  0001 C CNN
+F 3 "" H 4600 3200 50  0001 C CNN
+	1    4600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 6125CC51
+P 5700 3650
+F 0 "#PWR05" H 5700 3400 50  0001 C CNN
+F 1 "GND" H 5705 3477 50  0000 C CNN
+F 2 "" H 5700 3650 50  0001 C CNN
+F 3 "" H 5700 3650 50  0001 C CNN
+	1    5700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3350 5700 3350
+Wire Wire Line
+	5700 3350 5700 3550
+Wire Wire Line
+	4500 3350 4500 3550
+Wire Wire Line
+	4500 3550 5700 3550
+Connection ~ 5700 3550
+Wire Wire Line
+	5700 3550 5700 3650
+$Comp
+L power:+8V #PWR04
+U 1 1 6125F5A6
+P 5650 3250
+F 0 "#PWR04" H 5650 3100 50  0001 C CNN
+F 1 "+8V" V 5665 3378 50  0000 L CNN
+F 2 "" H 5650 3250 50  0001 C CNN
+F 3 "" H 5650 3250 50  0001 C CNN
+	1    5650 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 3250 5650 3250
+$Comp
+L power:+12V #PWR03
+U 1 1 61260571
+P 4250 3250
+F 0 "#PWR03" H 4250 3100 50  0001 C CNN
+F 1 "+12V" V 4265 3378 50  0000 L CNN
+F 2 "" H 4250 3250 50  0001 C CNN
+F 3 "" H 4250 3250 50  0001 C CNN
+	1    4250 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 3250 4500 3250
+$Comp
+L Motor:Fan_Tacho_PWM FAN1
+U 1 1 61261216
+P 6750 2700
+F 0 "FAN1" H 6908 2796 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 6908 2705 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 6750 2710 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 6750 2710 50  0001 C CNN
+	1    6750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan_Tacho_PWM FAN2
+U 1 1 6126308C
+P 6750 3350
+F 0 "FAN2" H 6908 3446 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 6908 3355 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 6750 3360 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 6750 3360 50  0001 C CNN
+	1    6750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan_Tacho_PWM FAN3
+U 1 1 61263E87
+P 6750 4000
+F 0 "FAN3" H 6908 4096 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 6908 4005 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 6750 4010 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 6750 4010 50  0001 C CNN
+	1    6750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan_Tacho_PWM FAN4
+U 1 1 61264E93
+P 6750 4650
+F 0 "FAN4" H 6908 4746 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 6908 4655 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 6750 4660 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 6750 4660 50  0001 C CNN
+	1    6750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan_Tacho_PWM 12V_FAN1
+U 1 1 612669FE
+P 3350 2700
+F 0 "12V_FAN1" H 3508 2796 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 3508 2705 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 3350 2710 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 3350 2710 50  0001 C CNN
+	1    3350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan_Tacho_PWM 12V_FAN2
+U 1 1 61268A0E
+P 3350 3350
+F 0 "12V_FAN2" H 3508 3446 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 3508 3355 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 3350 3360 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 3350 3360 50  0001 C CNN
+	1    3350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan_Tacho_PWM 12V_FAN3
+U 1 1 61269E63
+P 3350 4000
+F 0 "12V_FAN3" H 3508 4096 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 3508 4005 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 3350 4010 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 3350 4010 50  0001 C CNN
+	1    3350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan_Tacho_PWM 12V_FAN4
+U 1 1 6126ADAF
+P 3350 4650
+F 0 "12V_FAN4" H 3508 4746 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 3508 4655 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 3350 4660 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 3350 4660 50  0001 C CNN
+	1    3350 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 6126F5EE
+P 2250 5000
+F 0 "#PWR01" H 2250 4750 50  0001 C CNN
+F 1 "GND" H 2255 4827 50  0000 C CNN
+F 2 "" H 2250 5000 50  0001 C CNN
+F 3 "" H 2250 5000 50  0001 C CNN
+	1    2250 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 61271182
+P 8000 5000
+F 0 "#PWR07" H 8000 4750 50  0001 C CNN
+F 1 "GND" H 8005 4827 50  0000 C CNN
+F 2 "" H 8000 5000 50  0001 C CNN
+F 3 "" H 8000 5000 50  0001 C CNN
+	1    8000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR02
+U 1 1 61272CD3
+P 2500 2250
+F 0 "#PWR02" H 2500 2100 50  0001 C CNN
+F 1 "+12V" H 2515 2423 50  0000 C CNN
+F 2 "" H 2500 2250 50  0001 C CNN
+F 3 "" H 2500 2250 50  0001 C CNN
+	1    2500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+8V #PWR06
+U 1 1 612749DA
+P 6150 2250
+F 0 "#PWR06" H 6150 2100 50  0001 C CNN
+F 1 "+8V" H 6165 2423 50  0000 C CNN
+F 2 "" H 6150 2250 50  0001 C CNN
+F 3 "" H 6150 2250 50  0001 C CNN
+	1    6150 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2250 6150 2400
+Wire Wire Line
+	6150 4350 6750 4350
+Wire Wire Line
+	6750 3700 6150 3700
+Connection ~ 6150 3700
+Wire Wire Line
+	6150 3700 6150 4350
+Wire Wire Line
+	6750 3050 6150 3050
+Connection ~ 6150 3050
+Wire Wire Line
+	6150 3050 6150 3700
+Wire Wire Line
+	6750 2400 6150 2400
+Connection ~ 6150 2400
+Wire Wire Line
+	6150 2400 6150 3050
+Wire Wire Line
+	6750 2900 8000 2900
+Wire Wire Line
+	8000 2900 8000 3550
+Wire Wire Line
+	6750 4850 8000 4850
+Connection ~ 8000 4850
+Wire Wire Line
+	8000 4850 8000 5000
+Wire Wire Line
+	6750 4200 8000 4200
+Connection ~ 8000 4200
+Wire Wire Line
+	8000 4200 8000 4850
+Wire Wire Line
+	6750 3550 8000 3550
+Connection ~ 8000 3550
+Wire Wire Line
+	8000 3550 8000 4200
+Wire Wire Line
+	3350 4850 2250 4850
+Wire Wire Line
+	2250 4850 2250 5000
+Wire Wire Line
+	3350 2900 2250 2900
+Wire Wire Line
+	2250 2900 2250 3600
+Connection ~ 2250 4850
+Wire Wire Line
+	3350 3550 3350 3600
+Wire Wire Line
+	3350 3600 2250 3600
+Connection ~ 2250 3600
+Wire Wire Line
+	2250 3600 2250 4250
+Wire Wire Line
+	3350 4200 3350 4250
+Wire Wire Line
+	3350 4250 2250 4250
+Connection ~ 2250 4250
+Wire Wire Line
+	2250 4250 2250 4850
+Wire Wire Line
+	2500 2250 2500 2400
+Wire Wire Line
+	2500 4350 3350 4350
+Wire Wire Line
+	3350 3700 2500 3700
+Connection ~ 2500 3700
+Wire Wire Line
+	2500 3700 2500 4350
+Wire Wire Line
+	3350 3050 2500 3050
+Connection ~ 2500 3050
+Wire Wire Line
+	2500 3050 2500 3700
+Wire Wire Line
+	3350 2400 2500 2400
+Connection ~ 2500 2400
+Wire Wire Line
+	2500 2400 2500 3050
+NoConn ~ 6450 2600
+NoConn ~ 6450 2800
+NoConn ~ 6450 3250
+NoConn ~ 6450 3450
+NoConn ~ 6450 4550
+NoConn ~ 6450 4750
+NoConn ~ 3050 4750
+NoConn ~ 3050 4550
+NoConn ~ 3050 4100
+NoConn ~ 3050 3900
+NoConn ~ 3050 2800
+NoConn ~ 3050 2600
+NoConn ~ 3050 3250
+NoConn ~ 3050 3450
+NoConn ~ 6450 4100
+NoConn ~ 6450 3900
+NoConn ~ -1450 6950
+$Comp
+L SATA:SATA_POWER_15 U2
+U 1 1 61287681
+P 4500 1300
+F 0 "U2" V 4815 900 50  0000 C CNN
+F 1 "SATA_POWER_15" V 4724 900 50  0000 C CNN
+F 2 "SATA:SATA_POWER_DIP_15" H 4500 -50 50  0001 C CNN
+F 3 "lib/SATA/SATA_COMBINED_22.pdf" H 4650 1700 50  0001 C CNN
+	1    4500 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 6128AAC2
+P 4600 2050
+F 0 "#PWR08" H 4600 1800 50  0001 C CNN
+F 1 "GND" H 4605 1877 50  0000 C CNN
+F 2 "" H 4600 2050 50  0001 C CNN
+F 3 "" H 4600 2050 50  0001 C CNN
+	1    4600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR010
+U 1 1 6128B6BC
+P 5600 2550
+F 0 "#PWR010" H 5600 2400 50  0001 C CNN
+F 1 "+12V" H 5615 2723 50  0000 C CNN
+F 2 "" H 5600 2550 50  0001 C CNN
+F 3 "" H 5600 2550 50  0001 C CNN
+	1    5600 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 6128D621
+P 5050 2550
+F 0 "#PWR09" H 5050 2400 50  0001 C CNN
+F 1 "+5V" H 5065 2723 50  0000 C CNN
+F 2 "" H 5050 2550 50  0001 C CNN
+F 3 "" H 5050 2550 50  0001 C CNN
+	1    5050 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 1600 4500 2050
+Wire Wire Line
+	4500 2050 4600 2050
+Wire Wire Line
+	4600 1600 4600 2050
+Connection ~ 4600 2050
+Wire Wire Line
+	4700 1600 4700 1750
+Wire Wire Line
+	4700 2050 4600 2050
+Wire Wire Line
+	4800 1600 4800 2050
+Wire Wire Line
+	4800 2050 4900 2050
+Wire Wire Line
+	4900 1600 4900 2050
+Connection ~ 4900 2050
+Wire Wire Line
+	4900 2050 5000 2050
+Wire Wire Line
+	5000 1600 5000 2050
+Connection ~ 5000 2050
+Wire Wire Line
+	5000 2050 5050 2050
+Wire Wire Line
+	5400 1600 5400 2050
+Wire Wire Line
+	5400 2050 5500 2050
+Wire Wire Line
+	5500 1600 5500 2050
+Connection ~ 5500 2050
+Wire Wire Line
+	5500 2050 5600 2050
+Wire Wire Line
+	5600 1600 5600 2050
+Connection ~ 5600 2050
+Wire Wire Line
+	5300 1600 5300 1750
+Wire Wire Line
+	5300 1750 5100 1750
+Connection ~ 4700 1750
+Wire Wire Line
+	4700 1750 4700 2050
+Wire Wire Line
+	5100 1600 5100 1750
+Connection ~ 5100 1750
+Wire Wire Line
+	5100 1750 4700 1750
+NoConn ~ 4200 1600
+NoConn ~ 4300 1600
+NoConn ~ 4400 1600
+NoConn ~ 5200 1600
+$Comp
+L Motor:Fan_Tacho_PWM 5V_FAN1
+U 1 1 612A07CB
+P 9150 2650
+F 0 "5V_FAN1" H 9308 2746 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 9308 2655 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 9150 2660 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 9150 2660 50  0001 C CNN
+	1    9150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan_Tacho_PWM 5V_FAN2
+U 1 1 612A3CCB
+P 9150 3300
+F 0 "5V_FAN2" H 9308 3396 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 9308 3305 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 9150 3310 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 9150 3310 50  0001 C CNN
+	1    9150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan_Tacho_PWM 5V_FAN3
+U 1 1 612A58EB
+P 9150 3950
+F 0 "5V_FAN3" H 9308 4046 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 9308 3955 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 9150 3960 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 9150 3960 50  0001 C CNN
+	1    9150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan_Tacho_PWM 5V_FAN4
+U 1 1 612A6464
+P 9150 4600
+F 0 "5V_FAN4" H 9308 4696 50  0000 L CNN
+F 1 "Fan_Tacho_PWM" H 9308 4605 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 9150 4610 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 9150 4610 50  0001 C CNN
+	1    9150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 612A885C
+P 10100 2150
+F 0 "#PWR011" H 10100 2000 50  0001 C CNN
+F 1 "+5V" H 10115 2323 50  0000 C CNN
+F 2 "" H 10100 2150 50  0001 C CNN
+F 3 "" H 10100 2150 50  0001 C CNN
+	1    10100 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 2150 10100 2350
+Wire Wire Line
+	10100 4300 9150 4300
+Wire Wire Line
+	9150 3650 10100 3650
+Connection ~ 10100 3650
+Wire Wire Line
+	10100 3650 10100 4300
+Wire Wire Line
+	9150 3000 10100 3000
+Connection ~ 10100 3000
+Wire Wire Line
+	10100 3000 10100 3650
+Wire Wire Line
+	9150 2350 10100 2350
+Connection ~ 10100 2350
+Wire Wire Line
+	10100 2350 10100 3000
+Wire Wire Line
+	9150 2850 9150 2900
+Wire Wire Line
+	9150 2900 8000 2900
+Connection ~ 8000 2900
+Wire Wire Line
+	9150 3500 9150 3550
+Wire Wire Line
+	9150 3550 8000 3550
+Wire Wire Line
+	9150 4150 9150 4200
+Wire Wire Line
+	9150 4200 8000 4200
+Wire Wire Line
+	9150 4800 9150 4850
+Wire Wire Line
+	9150 4850 8000 4850
+NoConn ~ 8850 4700
+NoConn ~ 8850 4500
+NoConn ~ 8850 4050
+NoConn ~ 8850 3850
+NoConn ~ 8850 3400
+NoConn ~ 8850 3200
+NoConn ~ 8850 2750
+NoConn ~ 8850 2550
+$Comp
+L Device:Polyfuse F1
+U 1 1 61501BE2
+P 5050 2300
+F 0 "F1" H 5138 2346 50  0000 L CNN
+F 1 "5V_Polyfuse" H 5138 2255 50  0000 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 5100 2100 50  0001 L CNN
+F 3 "~" H 5050 2300 50  0001 C CNN
+	1    5050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse F2
+U 1 1 61503C1C
+P 5600 2300
+F 0 "F2" H 5688 2346 50  0000 L CNN
+F 1 "12V_Polyfuse" H 5688 2255 50  0000 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 5650 2100 50  0001 L CNN
+F 3 "~" H 5600 2300 50  0001 C CNN
+	1    5600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2050 5600 2150
+Wire Wire Line
+	5600 2450 5600 2550
+Wire Wire Line
+	5050 2050 5050 2150
+Wire Wire Line
+	5050 2450 5050 2550
+$Comp
+L power:+12V #PWR012
+U 1 1 6150BB08
+P 6450 1000
+F 0 "#PWR012" H 6450 850 50  0001 C CNN
+F 1 "+12V" H 6465 1173 50  0000 C CNN
+F 2 "" H 6450 1000 50  0001 C CNN
+F 3 "" H 6450 1000 50  0001 C CNN
+	1    6450 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 6150C287
+P 7250 1000
+F 0 "#PWR013" H 7250 850 50  0001 C CNN
+F 1 "+5V" H 7265 1173 50  0000 C CNN
+F 2 "" H 7250 1000 50  0001 C CNN
+F 3 "" H 7250 1000 50  0001 C CNN
+	1    7250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED 12V_LED1
+U 1 1 61513EC6
+P 6500 1750
+F 0 "12V_LED1" V 6539 1632 50  0000 R CNN
+F 1 "RED_LED" V 6448 1632 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6500 1750 50  0001 C CNN
+F 3 "~" H 6500 1750 50  0001 C CNN
+	1    6500 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED 5V_LED1
+U 1 1 6151A80F
+P 7250 1750
+F 0 "5V_LED1" V 7289 1632 50  0000 R CNN
+F 1 "GREEN_LED" V 7198 1632 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7250 1750 50  0001 C CNN
+F 3 "~" H 7250 1750 50  0001 C CNN
+	1    7250 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6151B597
+P 6100 1200
+F 0 "R1" V 5893 1200 50  0000 C CNN
+F 1 "150R" V 5984 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6030 1200 50  0001 C CNN
+F 3 "~" H 6100 1200 50  0001 C CNN
+	1    6100 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6151DE95
+P 6500 1200
+F 0 "R2" V 6293 1200 50  0000 C CNN
+F 1 "150R" V 6384 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6430 1200 50  0001 C CNN
+F 3 "~" H 6500 1200 50  0001 C CNN
+	1    6500 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6151E3DC
+P 6900 1200
+F 0 "R3" V 6693 1200 50  0000 C CNN
+F 1 "150R" V 6784 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6830 1200 50  0001 C CNN
+F 3 "~" H 6900 1200 50  0001 C CNN
+	1    6900 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 6151E924
+P 7250 1300
+F 0 "R4" H 7180 1254 50  0000 R CNN
+F 1 "100R" H 7180 1345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7180 1300 50  0001 C CNN
+F 3 "~" H 7250 1300 50  0001 C CNN
+	1    7250 1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7250 1000 7250 1150
+Wire Wire Line
+	7250 1450 7250 1600
+$Comp
+L power:GND #PWR014
+U 1 1 61525D8D
+P 7250 2050
+F 0 "#PWR014" H 7250 1800 50  0001 C CNN
+F 1 "GND" H 7255 1877 50  0000 C CNN
+F 2 "" H 7250 2050 50  0001 C CNN
+F 3 "" H 7250 2050 50  0001 C CNN
+	1    7250 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1900 7250 2000
+Wire Wire Line
+	6500 1900 6500 2000
+Wire Wire Line
+	6500 2000 7250 2000
+Connection ~ 7250 2000
+Wire Wire Line
+	7250 2000 7250 2050
+Wire Wire Line
+	7050 1200 7100 1200
+Wire Wire Line
+	7100 1200 7100 1500
+Wire Wire Line
+	7100 1500 6500 1500
+Wire Wire Line
+	6500 1500 6500 1600
+Wire Wire Line
+	6650 1200 6750 1200
+Wire Wire Line
+	6350 1200 6250 1200
+Wire Wire Line
+	6450 1000 5850 1000
+Wire Wire Line
+	5850 1000 5850 1200
+Wire Wire Line
+	5850 1200 5950 1200
+$Comp
+L power:+8V #PWR015
+U 1 1 61579C83
+P 4600 3950
+F 0 "#PWR015" H 4600 3800 50  0001 C CNN
+F 1 "+8V" V 4615 4078 50  0000 L CNN
+F 2 "" H 4600 3950 50  0001 C CNN
+F 3 "" H 4600 3950 50  0001 C CNN
+	1    4600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 61581244
+P 4600 5700
+F 0 "#PWR016" H 4600 5450 50  0001 C CNN
+F 1 "GND" H 4605 5527 50  0000 C CNN
+F 2 "" H 4600 5700 50  0001 C CNN
+F 3 "" H 4600 5700 50  0001 C CNN
+	1    4600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 6158200C
+P 4600 4200
+F 0 "R5" H 4670 4246 50  0000 L CNN
+F 1 "150R" H 4670 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4530 4200 50  0001 C CNN
+F 3 "~" H 4600 4200 50  0001 C CNN
+	1    4600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 6158268A
+P 4600 4550
+F 0 "R6" H 4670 4596 50  0000 L CNN
+F 1 "150R" H 4670 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4530 4550 50  0001 C CNN
+F 3 "~" H 4600 4550 50  0001 C CNN
+	1    4600 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 61582966
+P 4600 4900
+F 0 "R7" H 4670 4946 50  0000 L CNN
+F 1 "150R" H 4670 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4530 4900 50  0001 C CNN
+F 3 "~" H 4600 4900 50  0001 C CNN
+	1    4600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED LM2596S_LED1
+U 1 1 61583239
+P 4600 5350
+F 0 "LM2596S_LED1" V 4639 5232 50  0000 R CNN
+F 1 "BLUE_LED" V 4548 5232 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4600 5350 50  0001 C CNN
+F 3 "~" H 4600 5350 50  0001 C CNN
+	1    4600 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 3950 4600 4050
+Wire Wire Line
+	4600 4350 4600 4400
+Wire Wire Line
+	4600 4700 4600 4750
+Wire Wire Line
+	4600 5050 4600 5200
+Wire Wire Line
+	4600 5500 4600 5700
+$EndSCHEMATC
